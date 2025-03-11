@@ -77,10 +77,11 @@ formInput.addEventListener("submit", function handleForm(event) {
   
         <p><strong>Codice Promozionale:</strong> ${codiceInput || "Nessuno"}</p>
         ${discountApplied ? "<p class='text-success'>Sconto del 25% applicato!</p>" : codiceInput ? "<p class='text-danger'>Codice promozionale non valido!</p>" : ""}
-        <p><strong>Privacy Policy Accepted:</strong> ${privacyPolicyInput ? "Si" : "No"}</p>
-
+        
+        
         <p><strong>Prezzo Finale:</strong> ${formattedPrice}</p>
-    `;
+        `;
+        // <p><strong>Privacy Policy Accepted:</strong> ${privacyPolicyInput ? "Si" : "No"}</p>
 
    // reset del form 
     formInput.reset();
