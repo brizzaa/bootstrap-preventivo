@@ -59,7 +59,7 @@ formInput.addEventListener("submit", function handleForm(event) {
     // per non far duplicare le div
     if (!outputDiv) {
         outputDiv = document.createElement("div");
-        outputDiv.classList.add("output-container", "my-5", "p-2", "border", "rounded");
+        outputDiv.classList.add("output-container", "my-5", "px-3", "border", "rounded", "py-3", "text-center");
         const formContainer = document.querySelector(".col-md-8");
         formContainer.appendChild(outputDiv);
     }
@@ -71,7 +71,7 @@ formInput.addEventListener("submit", function handleForm(event) {
         <p><strong>Cognome:</strong> ${cognomeInput}</p>
         <p><strong>Email:</strong> ${emailInput}</p>
 
-        <p><strong>Commissione</strong> ${lavoroInput === "1" ? "Sviluppo Backend" : lavoroInput === "2" ? "Sviluppo Frontend" : "Analisi Progettuale"}</p>
+        <p><strong>Commissione:</strong> ${lavoroInput === "1" ? "Sviluppo Backend" : lavoroInput === "2" ? "Sviluppo Frontend" : "Analisi Progettuale"}</p>
 
         <p><strong>Descrizione del lavoro</strong> ${textareaInput}</p>
   
@@ -86,10 +86,6 @@ formInput.addEventListener("submit", function handleForm(event) {
    // reset del form 
     formInput.reset();
 });
-
-
-
-
 
 
 // prove extra
